@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex Demo</title>
+	<style>
+		.row{
+			width:90%;
+			margin:0 auto;
+		}
+		.flex{
+			display: flex;
+			height: 300px;
+			flex-direction: row;
+			flex-wrap:wrap;
+			align-items:center;
+		}
+		.flex .img-wrapper{
+			padding: 10px;
+			overflow: hidden;
+			height: 200px;
+			max-width: 300px;
+			align-self:center;
+			background: #aaa;
+		}
+		.flex .img-wrapper.fg-2{
+			flex-basis:auto;
+		}
+		.flex img{
+			width:100%;
+			margin: auto 0;
+		}	
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="flex">
+			<div class="img-wrapper">
+				<img src="images/img1.gif" alt="1">
+			</div>
+			<div class="img-wrapper fg-2">
+				<img src="images/img2.jpg" alt="2">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img3.gif" alt="3">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img4.gif" alt="4">
+			</div>
+			<div class="img-wrapper fg-2">
+				<img src="images/img5.gif" alt="5">
+			</div>
+			<div class="img-wrapper fg-2">
+				<img src="images/img1.gif" alt="1">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img2.jpg" alt="2">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img3.gif" alt="3">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img4.gif" alt="4">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img5.gif" alt="5">
+			</div>
+			<div class="img-wrapper fg-2">
+				<img src="images/img1.gif" alt="1">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img2.jpg" alt="2">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img3.gif" alt="3">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img4.gif" alt="4">
+			</div>
+			<div class="img-wrapper">
+				<img src="images/img5.gif" alt="5">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
